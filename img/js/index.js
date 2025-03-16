@@ -81,33 +81,55 @@ document.addEventListener("DOMContentLoaded", function(){
 			video.play();
   	});
 
-	document.addEventListener("click", function (event) {
-		if (!videoContainer.contains(event.target) && !modal.contains(event.target)) {
-		videoContainer.classList.remove("cinema-mode");
-		video.pause();
-		thumbnail.style.display = "block"; 
-		video.style.opacity = "0";
-		}
-	});
-	}else{
-		console.error("One or more required elements are missing in the DOM");
-
-	}
-	if (video && videoContainer){
-		window.addEventListener("scroll", function() {
-			var videoTop = video.getBoundingClientRect().top;
-			var windowHeight = this.window.innerHeight;
-			if(videoTop  < windowHeight - 100){
-				video.style.animation="fadeIn 5s forwards";
-				video.style.opacity = 1;
+		document.addEventListener("click", function (event) {
+			if (!videoContainer.contains(event.target) && !modal.contains(event.target)) {
+			videoContainer.classList.remove("cinema-mode");
+			video.pause();
+			thumbnail.style.display = "block"; 
+			video.style.opacity = "0";
 			}
-		})
-	}else{
-		console.error("El video o el contenedor del video no se encontró en el DOM.");
-	}
+		});
+		}else{
+			console.error("One or more required elements are missing in the DOM");
 
+		}
+		if (video && videoContainer){
+			window.addEventListener("scroll", function() {
+				var videoTop = video.getBoundingClientRect().top;
+				var windowHeight = this.window.innerHeight;
+				if(videoTop  < windowHeight - 100){
+					video.style.animation="fadeIn 5s forwards";
+					video.style.opacity = 1;
+				}
+			})
+		}else{
+			console.error("El video o el contenedor del video no se encontró en el DOM.");
+		}
 
-	
+		// simulacion form
+		const form = document.getElementById("form");
+		const firstName = document.getElementById("firstName");
+		const lastName = document.getElementById("lastName");
+		const email = document.getElementById("email");
+		const thoughts = document.getElementById("thoughts");
+
+		form.addEventListener("submit", function(event) {
+			event.preventDefault();
+
+		const firstNameValue = firstName.value;
+		const lastNameValue = lastName.value;
+		const emailValue = email.value;
+		const thoughtsValue = thoughts.value;
+
+		//alerta
+		Swal.fire({
+		title: 'Thank You for Sharing!',
+		text: `Hello ${firstNameValue} ${lastNameValue},\nWe have received your thoughts:\n"${thoughtsValue}"\nYour email is: ${emailValue}`,
+		icon: 'success',
+		confirmButtonText: 'Close'
+		});
+		form.reset();
+	});
 });
 
 
