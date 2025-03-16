@@ -15,8 +15,8 @@
     <header id="header">
         <div class="vert-text">
           <div class="p-img">
-          <img src="https://res.cloudinary.com/pashagord/image/upload/v1468545314/Portfolio/logos/codepen_logo.png"/>
-      </div>
+          <img src="https://www.svgrepo.com/show/17075/development.svg" class="img-fluid" alt="logo"/>
+        </div>
                   <h1 id="typer-size">                
                       <!-- TEXTS -->
                       <span id="typed"></span>
@@ -41,7 +41,7 @@
           <a href="#contacts" class="scroll-down nav-link"></a>
         </div>
       </header>
-      
+
       <div class="section-title">
         <p class="typed-strings">Welcome to the carousel</p>
       </div>
@@ -141,7 +141,7 @@
   </div>
   <div class="audio-player">
     <div class="icon" draggable="true">
-      <svg xmlns="http://www.w3.org/2000/svg" class="audio-icon" viewBox="0 0 20 20" fill="currentColor">
+      <svg xmlns="https://www.svgrepo.com/show/532708/music.svg" class="audio-icon" viewBox="0 0 20 20" fill="currentColor">
         <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"/>
       </svg>
       <audio src="./audio/audio.flac" type="audio/flac"></audio>
@@ -175,7 +175,7 @@
   <div class="video-section">
     <img src="./img/haku.gif" class="video-thumbnail" alt="Preview del video">
     <video controls>
-      <source src="..\video\vid.mp4" type="video/mp4">
+      <source src="./video/vid.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -192,15 +192,23 @@
           <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center">
               <h3 class="zayn">What are your thoughts about my landing page?</h3>
-      <!-- 		FORMS		 -->
+      <!-- FORMS -->
                   <form id="form">
+                    <div class="mb-3">
                       <input type="text" placeholder="First Name"/><br>
+                    </div>
+                    <div class="mb-3">
                       <input type="text" placeholder="Last Name"/><br>
+                    </div>
+                      <div class="mb-3">
                       <input type="text" placeholder="Your Email"/><br>
+                    </div>
+                      <div class="mb-3">
                       <input type="text" placeholder="My thoughts are..."/><br>
+                    </div>
                       <button>Send</button>
                   </form>
-              <p class="typed-strings">Thank you for sharing!</p>
+              <p class="form-message">Thank you for sharing!</p>
             </div>
           </div>
         </div>

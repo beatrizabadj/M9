@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
-	
+	document.getElementById("theme-toggle").addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+    });
 	const audio = document.querySelector('.audio-player audio'); 
 	const playButton = document.querySelector('.player-button svg'); 
 	const playerButton = document.querySelector('.player-button'); 
@@ -55,43 +57,56 @@ document.addEventListener("DOMContentLoaded", function(){
 	  });
 	});
 	
-	var video = document.querySelector(".video");
-  	var videoContainer = document.querySelector(".video-container");
-  	var body = document.getElementById('body'); 
-  	var thumbnail = document.querySelector(".video-thumbnail");
-  	var modal = document.getElementById("popcornModal");
+	function changeBackground(color1, color2){
+		document.body.style.background=`linear-gradient(to right, ${color1}, ${color2})`;
+	}
+	const video = document.querySelector(".video-container video");
+  	const videoContainer = document.querySelector(".video-container");
+  	const thumbnail = document.querySelector(".video-thumbnail");
+  	const modal = document.getElementById("popcornModal");
 
-	// click en el thumbnail
-  	thumbnail.addEventListener("click", function () {
-		modal.classList.add("show");	
-		setTimeout(() => {
-			modal.classList.remove("show");
-			thumbnail.style.display = "none";
-			videoContainer.classList.add("cinema-mode");
-			}, 2000);    	
+	  if (video && videoContainer && thumbnail && modal) {
+		// click en el thumbnail
+		thumbnail.addEventListener("click", function () {
+			modal.classList.add("show");	
+			setTimeout(() => {
+				modal.classList.remove("show");
+				thumbnail.style.display = "none";
+				videoContainer.classList.add("cinema-mode");
+				}, 2000);    	
 
-		body.style.background = 'black';
-		video.style.opacity = "1";
-	
-		video.play();
-  });
+			changeBackground('#700e20', '#3b022a');
+			video.style.opacity = "1";
+		
+			video.play();
+  	});
 
-  document.addEventListener("click", function (event) {
-    if (!videoContainer.contains(event.target) && !modal.contains(event.target)) {
-      videoContainer.classList.remove("cinema-mode");
-      video.pause();
-      thumbnail.style.display = "block"; 
-      video.style.opacity = "0";
-    }
-  });
-	window.addEventListener("scroll", function() {
-		var videoTop = video.getBoundingClientRect().top;
-		var windowHeight = this.window.innerHeight;
-		if(videoTop < windowHeight - 100){
-			video.style.animation="fadeIn 5s forwards";
-			video.style.opacity = 1;
+	document.addEventListener("click", function (event) {
+		if (!videoContainer.contains(event.target) && !modal.contains(event.target)) {
+		videoContainer.classList.remove("cinema-mode");
+		video.pause();
+		thumbnail.style.display = "block"; 
+		video.style.opacity = "0";
 		}
-	})
+	});
+	}else{
+		console.error("One or more required elements are missing in the DOM");
+
+	}
+	if (video && videoContainer){
+		window.addEventListener("scroll", function() {
+			var videoTop = video.getBoundingClientRect().top;
+			var windowHeight = this.window.innerHeight;
+			if(videoTop  < windowHeight - 100){
+				video.style.animation="fadeIn 5s forwards";
+				video.style.opacity = 1;
+			}
+		})
+	}else{
+		console.error("El video o el contenedor del video no se encontró en el DOM.");
+	}
+
+
 	
 });
 
@@ -121,7 +136,7 @@ $(document).ready(function() {
     }
 
   });
-});
+
 
 
 
@@ -131,7 +146,6 @@ $(document).ready(function() {
 	
 	// WAIT FOR ALL TO BE LOADED
 	window.onload = function() {
-		
 		// add loaded class to html
 		var root = document.documentElement;
 		root.className += ' loaded';
@@ -139,12 +153,12 @@ $(document).ready(function() {
 		// TYPING EFFECT
 		
 		Typed.new('#typed', {
-            stringsElement: document.getElementById('typed-strings'),
 			loop: true,
 			typeSpeed: 5,
 			backSpeed: 3,
 			startDelay: 1000,
-			backDelay: 1200
+			backDelay: 1200,
+
         });
 	}; // all loaded
 	
@@ -289,3 +303,4 @@ $(document).ready(function() {
 	}
 }(window, document, window.jQuery);
 
+});

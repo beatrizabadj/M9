@@ -12,10 +12,12 @@ body {
   font-family: 'Fira Code', Consolas, Monaco, monospace;
   /* background: #B24592;  fallback for old browsers */
 	/* background: -webkit-linear-gradient(to right, #F15F79, #B24592);  Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #F15F79, #B24592); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: linear-gradient(to right, #F15F79, #B24592); 
   min-height: 100vh;
 }
-
+.dark-mode{
+  background:linear-gradient(to right, #651020, #5e0343);
+}
 h1.major,
 h2.major,
 h3.major,
@@ -310,7 +312,6 @@ header .vert-text .scroll-down::before {
 }
 
 .video-container.cinema-mode {
-  background-color: rgba(0, 0, 0, 0.678);
   width: 100%;
   padding:40px;
   height: 100%;
@@ -362,10 +363,9 @@ header .vert-text .scroll-down::before {
 video {
   width: 100%;
   border-radius: 10px;
-  /* animation:fadeIn 3s; */
+  animation:fadeIn 3s;
   display:block;
   transition: opacity 0.5s ease-in-out, visibility 0.5s;
-
 }
 
 video:hover{
@@ -413,6 +413,9 @@ input[type=text]:focus{
 .zayn:hover{
   background: linear-gradient(to right, #dd8147, #e53eb3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius:15px;
+  padding:5px;
+  transform: scale(1.05);
+
 }
 
 hr.style17 {
@@ -468,6 +471,8 @@ button
 	text-align: center;
 	position: relative;
 	top: -70px;
+  animation: rotation 10s infinite linear;
+
 }
 img{
 	z-index: 100;
@@ -573,8 +578,8 @@ img{
 
   .zayn{
     display:flex;
-    margin-left:20px;
-    margin-right:20px;
+    margin-left:30px;
+    margin-right:30px;
     font-size:20px;
     flex-wrap: wrap;
   }
@@ -584,6 +589,7 @@ img{
     padding:5px;
     border-radius: 10px;
   }
+
   .audio-player {
     width: 70%;
     justify-content:center;
