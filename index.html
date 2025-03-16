@@ -1,287 +1,222 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>HTML</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
 
-    body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-    .navbar-custom {
-      background-color: #006fe6; 
-      width:100%;
-      margin:0;
-      padding:0;
-    }
-
-    .navbar-custom .nav-link {
-      color: white;
-    }
-
-    .navbar-custom .nav-item.accede-register a {
-      background-color: #084f9c;
-      border-radius: 5px;
-      padding: 10px 15px;
-      color: white;
-    }
-
-    .navbar-custom .nav-item.accede-register a:hover {
-      background-color: #002752;
-      padding: 5px;
-    }
-
-    .image-row {
-      margin-top: 20px;
-      margin: 0px;
-    }
-
-    .card {
-      position: relative;
-      border: none;
-    }
-
-    .card img {
-      height: 250px;
-      object-fit: cover;
-      width: 100%;
-    }
-
-    .card-body {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.5);
-      color: white;
-      padding: 10px;
-      text-align: center;
-    }
-
-    .left-column {
-      color: black;
-      padding: 0; 
-      display: flex;
-      flex-direction: column;
-    }
-
-    .section {
-      flex: 1;
-      padding: 10px;
-      border-bottom: 1px solid #ddd;
-      display: flex; 
-      align-items: center;
-      position: relative;
-      background: #fff;
-    }
-
-    .section:last-child {
-      border-bottom: none;
-    }
-
-    .section img {
-      max-width: 150px;
-      height: auto;
-      margin-right: 20px;
-    }
-
-    .section .text-container {
-      width: 1000px;
-      padding-left: 20px;
-    }
-
-    .section .text-container p {
-      width: 100%; 
-      position: relative;
-    }
-
-    .right-column {
-      padding: 20px;
-      background-color: #f0f0f0;
-    }
-
-    @media (max-width: 768px) {
-      .left-column, .right-column {
-        padding: 10px;
-      }
-
-      .section {
-      display: flex;
-      align-items: center;
-      padding: 5px;
-      border-bottom: 1px solid #ddd;
-      position: relative;
-      width: 100%;
-}
-
-      .section img {
-        max-width: 150px;
-        height: auto;
-        margin-right: 20px;
-      }
-
-  .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-    
-    }
-  </style>
+    <title>Document</title>
 </head>
+<body id="body">
+    <header id="header">
+        <div class="vert-text">
+          <div class="p-img">
+          <img src="https://res.cloudinary.com/pashagord/image/upload/v1468545314/Portfolio/logos/codepen_logo.png"/>
+      </div>
+                  <h1 id="typer-size">                
+                      <!-- TEXTS -->
+                      <span id="typed"></span>
+                      <div id="typed-strings">
+                          <p>Projecte final M9...</span> </p>
+                          <p>Disseny de la interfície</p>
+                          <!-- <p><span class="#"></span></p> -->
+                                            <p>Mapes de bits...</p>
+                                            <p>Imatges vectorials...</p>
+                                            <p>PNG...</p>
+                                            <p>SVG...</p>
+                                            <p>Audio Content...</p>
+                                            <p>Media Content...</p>
+                                            <p>Most Powerful Landing Page</p>
+                                            
+                      </div>
+                      <!-- TEXTS ENDS -->
+                  </h1>
+                  <!-- TITLE -->
+                  
+          <h3 class="blink-text">Beatriz Abad</h3>
+          <a href="#contacts" class="scroll-down nav-link"></a>
+        </div>
+      </header>
+      
+      <div class="section-title">
+        <p class="typed-strings">Welcome to the carousel</p>
+      </div>
+      <section class="carousel" id >
+        <div class="group">
+        <svg class="card" width="200" height="200" role="img" aria-label="Casa con sol">
+            <rect x="0" y="0" width="200" height="160" fill="#87CEEB"/> <!--cielo-->
+            <rect x="0" y="150" width="200" height="100" fill="#8ceb8c"/> <!--cesped-->
+            <rect x="35" y="70" width="130" height="100" fill="#ffa078" /> <!--fachada-->
+            <polygon points="35,70 100,15 165,70" fill="#cd823c" /> <!--tejado-->
+            <rect x="95" y="130" width="30" height="40" fill="#87410f" /> <!--puerta-->
+            <rect x="50" y="90" width="25" height="25" fill="#f0f5ff" /> <!--ventana derecha-->
+            <rect x="130" y="90" width="25" height="25" fill="#f0f5ff" /> <!--ventana izquierda-->
+            <circle cx="100" cy="150" r="1.5" fill="#ffd700" /> <!--pomo-->
+            <circle cx="30" cy="30" r="15" fill="#ffd700" /> <!--sol-->
+        </svg>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
-    <div class="container-md">
-      <a class="navbar-brand" href="#">
-        <img src="C:\Users\beaba\Pictures\42832.jpg" width="30" height="24" class="d-inline-block align-text-top">
-        hispasonic
-      </a>
+        <svg class="card" width="200" height="200" role="img" aria-label="Robot">
+            <rect x="0" y="0" width="200" height="200" fill="#f5f5f5" /> <!--fondo-->
+            <rect x="60" y="40" width="80" height="55" fill="#a0a0a0" rx="10" ry="10" /> <!--cabeza-->
+            <rect x="70" y="100" width="60" height="70" fill="#a0a0a0" /> <!--cuerpo-->
+            <circle cx="85" cy="65" r="10" fill="lime" /> <!--ojo izquierdo-->
+            <circle cx="115" cy="65" r="10" fill="lime" /> <!--ojo derecho-->
+            <circle cx="85" cy="65" r="3" fill="white" /> <!--blanco ojo-->
+            <circle cx="115" cy="65" r="3" fill="white" /> <!-- blanco ojo-->
+            <rect x="40" y="115" width="30" height="10" fill="#a0a0a0" /> <!--brazo izquierdo-->
+            <rect x="130" y="115" width="30" height="10" fill="#a0a0a0" /> <!--brazo derecho -->
+            <circle cx="100" cy="120" r="5" fill="red" /> <!--boton rojo-->
+            <circle cx="100" cy="135" r="5" fill="green" /> <!--boton verde-->
+            <circle cx="100" cy="150" r="5" fill="blue" /> <!--boton azul-->
+            <line x1="100" y1="30" x2="100" y2="40" stroke="#a0a0a0" stroke-width="3" /> 
+            <circle cx="100" cy="25" r="5" fill="red" />
+        </svg>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <svg class="card" width="200" height="200" role="img" aria-label="Coche rojo">
+            <rect x="0" y="0" width="200" height="200" fill="#d3d3d3" /> <!--fondo-->
+            <rect x="50" y="80" width="100" height="35" fill="red" />
+            <rect x="70" y="60" width="60" height="25" fill="red" />
+            <rect x="75" y="65" width="25" height="15" fill="#87cdeb" />
+            <rect x="105" y="65" width="20" height="15" fill="#87cdeb" />
+            <circle cx="70" cy="120" r="15" fill="black" /> <!--rueda izquierda-->
+            <circle cx="130" cy="120" r="15" fill="black" /> <!--rueda derecha-->
+            <circle cx="70" cy="120" r="7" fill="gray" />
+            <circle cx="130" cy="120" r="7" fill="gray" />
+            <rect x="140" y="90" width="10" height="10" fill="yellow" />
+            <rect x="50" y="90" width="10" height="10" fill="yellow" />
+        </svg>
+        <!-- <div aria-hidden class="group "> -->
+
+        <svg class="card" width="200" height="200" role="img" aria-label="Casa con sol">
+          <rect x="0" y="0" width="200" height="160" fill="#87CEEB"/> <!--cielo-->
+          <rect x="0" y="150" width="200" height="100" fill="#8ceb8c"/> <!--cesped-->
+          <rect x="35" y="70" width="130" height="100" fill="#ffa078" /> <!--fachada-->
+          <polygon points="35,70 100,15 165,70" fill="#cd823c" /> <!--tejado-->
+          <rect x="95" y="130" width="30" height="40" fill="#87410f" /> <!--puerta-->
+          <rect x="50" y="90" width="25" height="25" fill="#f0f5ff" /> <!--ventana derecha-->
+          <rect x="130" y="90" width="25" height="25" fill="#f0f5ff" /> <!--ventana izquierda-->
+          <circle cx="100" cy="150" r="1.5" fill="#ffd700" /> <!--pomo-->
+          <circle cx="30" cy="30" r="15" fill="#ffd700" /> <!--sol-->
+      </svg>
+
+      <svg class="card" width="200" height="200" role="img" aria-label="Robot">
+          <rect x="0" y="0" width="200" height="200" fill="#f5f5f5" /> <!--fondo-->
+          <rect x="60" y="40" width="80" height="55" fill="#a0a0a0" rx="10" ry="10" /> <!--cabeza-->
+          <rect x="70" y="100" width="60" height="70" fill="#a0a0a0" /> <!--cuerpo-->
+          <circle cx="85" cy="65" r="10" fill="lime" /> <!--ojo izquierdo-->
+          <circle cx="115" cy="65" r="10" fill="lime" /> <!--ojo derecho-->
+          <circle cx="85" cy="65" r="3" fill="white" /> <!--blanco ojo-->
+          <circle cx="115" cy="65" r="3" fill="white" /> <!-- blanco ojo-->
+          <rect x="40" y="115" width="30" height="10" fill="#a0a0a0" /> <!--brazo izquierdo-->
+          <rect x="130" y="115" width="30" height="10" fill="#a0a0a0" /> <!--brazo derecho -->
+          <circle cx="100" cy="120" r="5" fill="red" /> <!--boton rojo-->
+          <circle cx="100" cy="135" r="5" fill="green" /> <!--boton verde-->
+          <circle cx="100" cy="150" r="5" fill="blue" /> <!--boton azul-->
+          <line x1="100" y1="30" x2="100" y2="40" stroke="#a0a0a0" stroke-width="3" /> 
+          <circle cx="100" cy="25" r="5" fill="red" />
+      </svg>
+
+      <svg class="card" width="200" height="200" role="img" aria-label="Coche rojo">
+          <rect x="0" y="0" width="200" height="200" fill="#d3d3d3" /> <!--fondo-->
+          <rect x="50" y="80" width="100" height="35" fill="red" />
+          <rect x="70" y="60" width="60" height="25" fill="red" />
+          <rect x="75" y="65" width="25" height="15" fill="#87cdeb" />
+          <rect x="105" y="65" width="20" height="15" fill="#87cdeb" />
+          <circle cx="70" cy="120" r="15" fill="black" /> <!--rueda izquierda-->
+          <circle cx="130" cy="120" r="15" fill="black" /> <!--rueda derecha-->
+          <circle cx="70" cy="120" r="7" fill="gray" />
+          <circle cx="130" cy="120" r="7" fill="gray" />
+          <rect x="140" y="90" width="10" height="10" fill="yellow" />
+          <rect x="50" y="90" width="10" height="10" fill="yellow" />
+      </svg>
+    <!-- </div>          -->
+    </div>
+</section>
+  <div class="section-title">
+    <p class="typed-strings">Let's listen to some jams!</p>
+  </div>
+  <div class="audio-player">
+    <div class="icon" draggable="true">
+      <svg xmlns="http://www.w3.org/2000/svg" class="audio-icon" viewBox="0 0 20 20" fill="currentColor">
+        <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"/>
+      </svg>
+      <audio src="./audio/audio.flac" type="audio/flac"></audio>
+    </div>
+    <div class="controls">
+      <button class="sound-button">
+        <!-- Sonido -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+          <path fill-rule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.707.707L4.586 13H2a1 1 0 01-1-1V8a1 1 0 011-1h2.586l3.707-3.707a1 1 0 011.09-.217zM14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" clip-rule="evenodd" />
+        </svg>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Revista</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Foros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Música</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Equipo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Mercasonic</a>
-          </li>
-
-          <li class="nav-item accede-register">
-            <a class="nav-link" href="#">Accede</a>
-          </li>
-          <li class="nav-item accede-register">
-            <a class="nav-link" href="#">Regístrate</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container image-row">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRqoMTFP0Oz98Xg2HVpv8QkEpkDJSVq_o8SVypssc48obRT-eKv" alt="Imagen 1" class="img-fluid">
-          <div class="card-body">
-            <h5 class="card-title">Sintetizadores</h5>
-            <p class="card-text">Native Instruments Kontrol S49, S61 y S88 mk3 añaden aftertouch polifónico</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="https://files.soniccdn.com/images/articles/260/47358.jpg" alt="Imagen 2" class="img-fluid">
-          <div class="card-body">
-            <h5 class="card-title">Informática musical</h5>
-            <p class="card-text">Acon Digital Remix: la separación automática de pistas IA tiene otro contendiente</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShTQ1QmPTo9Xcx2ZEml5xSAmhjM7s56qlAETauS1pOMvToDPxb" alt="Imagen 3" class="img-fluid">
-          <div class="card-body">
-            <h5 class="card-title">Sintetizadores</h5>
-            <p class="card-text">Yamaha FGDP-50 y FGDP-30, finger drumming autosuficiente</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mt-4">
-      <div class="row">
-
-        <div class="col-md-9 left-column">
-          <div class="section">
-            <img src="https://m.media-amazon.com/images/I/91sku0NQHXL._AC_UF1000,1000_QL80_.jpg">
-            <div class="text-container">
-              <p>Focal Trio6, nuevo monitor de tres vías tope de gama del fabricante francés</p>
-              <p class="text2">Focal presenta Trios, un nuevo miembro de su familla ST6 llamado a ser el buque insignia de sus monitores de tres vias. Prometen transparencia, fiabilidad y una respuesta de frecuencias desde 35 Hz & 40 kHz.</p>
-            </div>
-          </div>
-          <div class="section">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpXeX518fvSiusOaiM4WSFs5vLNLkVlSZyEx5RNiUXaC5gRcRI">
-            <div class="text-container">
-              <p>VSL Synchron Smart Orchestra, una orquesta "inteligente" completa en tu teclado</p>
-              <p class="text2">Vienna Symphonic Library lanza Synchron Smart Orchestra, un nuevo plugin todo en uno que permite distribuir una orquesta completa a lo largo de un teclado controlador de forma inteligente. Su precio de lanzamiento es de 175 €.</p>
-            </div>
-          </div>
-          <div class="section">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRyjwzcLA9atUQHSdJCeAMAFmubSsD-l4Hzb7p_eeKMMfBCzYwWk5mMm0G4BpGMNR1Xzo&usqp=CAU">
-            <div class="text-container">
-              <p>Analogue Solutions Maximus AS300: 16 VCOS y 8 voces de enorme polisinte semimodular</p>
-              <p class="text2">Analogue Solutions vuelve a la carga con Maximus A3300, otra de sus Imponentes creaciones electrón
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3 right-column">
-          <div class="news-item">
-            <h5 class="news-title">SÍGUENOS AQUÍ</h5>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss" viewBox="0 0 16 16">
-              <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
-              <path d="M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1m0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1"/>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
-            </svg>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoQK2g3RuaMR9I9Y4UvUR-ppxsK9xG1pgdvrAMuPk-t5Ak7c0M">
-            <p class="news-description">NO PASES POR ALTO</p>
-          </div>
-          <div class="news-item">
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRI6fB4DN1g9RAJPz60sUrEybugdP2ke6N_jNGNFp6GHsn-IPxK">
-            <h5 class="news-title"></h5>
-            <p class="news-description">Focusrite Scarlett 4: la nueva generación de interfaces ya está aquí</p>
-          </div>
-          <div class="news-item">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTkutQJ6B-5yuBUcCHnay1W5jnFMnSUxQLuooQ4qYJB7jmBvEJ2">
-            <p class="news-description">Cómo limpiar los contactos del teclado de tu sintetizador</p>
-          </div>
-          <div class="news-item">
-            <img src="https://files.soniccdn.com/images/articles/260/47342.jpg">
-             </div>
-        </div>
+      <input type="range" class="timeline" max="100" value="0">
+      <button class="player-button">
+        <!-- Play/Pause -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#3D3132">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+        </svg>
+      </button>
+      <div class="audio-carousel" id="audioCarousel">
+        <div class="audio-slide" draggable="true" data-audio-src="./audio/audio.flac"></div>
+        <div class="audio-slide" draggable="true" data-audio-src="./audio/audio2.flac"></div>
+        <div class="audio-slide" draggable="true" data-audio-src="./audio/audio3.flac"></div>
       </div>
     </div>
   </div>
+<div class="section-title">
+  <p class="typed-strings">Turn the lights off!</p><br>
+  <!-- <p class="typed-strings">Click on the image and let's see what happens...</p> -->
+</div>
+<div class="video-container">
+  <div class="video-section">
+    <img src="./img/haku.gif" class="video-thumbnail" alt="Preview del video">
+    <video controls>
+      <source src="..\video\vid.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+<div class="vid-modal" id="popcornModal">
+  <div class="modal-content">
+    <p>Better grab some popcorn! </p>
+  </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- FOOTER  -->
+      <footer id="contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <h3 class="zayn">What are your thoughts about my landing page?</h3>
+      <!-- 		FORMS		 -->
+                  <form id="form">
+                      <input type="text" placeholder="First Name"/><br>
+                      <input type="text" placeholder="Last Name"/><br>
+                      <input type="text" placeholder="Your Email"/><br>
+                      <input type="text" placeholder="My thoughts are..."/><br>
+                      <button>Send</button>
+                  </form>
+              <p class="typed-strings">Thank you for sharing!</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+      <!-- SOCIALS -->
+      <div class="socials">
+        <a class="social-icon etpxavier" href="https://www.etpxavier.com/ca/" target="_blank"></a>
+        <a class="social-icon ig" href="https://www.instagram.com/" target="_blank"></a>
+        <a class="social-icon github" href="https://github.com/beatrizabadj" target="_blank"></a>
+        <a class="social-icon linkedin" href="https://www.linkedin.com/" target="_blank"></a>
+      </div>
+      
+      
+
+      <script src="js/index.js"></script>
 </body>
 </html>
